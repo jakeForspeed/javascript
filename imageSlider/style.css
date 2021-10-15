@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide:nth-of-type(1) {
+  background: url("https://wallpapercave.com/wp/wp4325531.jpg") no-repeat center
+    center/cover;
+}
+.slide:nth-of-type(2) {
+  background: url("https://wallpaperaccess.com/full/1631874.jpg") no-repeat
+    center center/cover;
+}
+.slide:nth-of-type(3) {
+  background: url("https://cutewallpaper.org/21/javascript-wallpaper/JavaScript-Wallpapers-Wallpaper-Cave.jpg")
+    no-repeat center center/cover;
+}
+
+button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background: transparent;
+  z-index: 9;
+  cursor: pointer;
+}
+button:hover {
+  color: #fff;
+  border: 1px solid #ffff;
+}
+#prev {
+  left: 0;
+}
+#next {
+  right: 0;
+}

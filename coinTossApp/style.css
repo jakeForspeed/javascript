@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #cccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game {
+  width: 1000px;
+  text-align: center;
+}
+
+.score-board {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.score-board span {
+  font-size: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttons .bets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.buttons button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.buttons #heads {
+  background: url("fc.png");
+  background-size: contain;
+}
+.buttons #tails {
+  background: url("bc.png");
+  background-size: contain;
+}
+.buttons #heads:active,
+.buttons #tails:active {
+  box-shadow: 0 0 10px 10px red;
+}
+.center-game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.player-selected,
+.computer-selected {
+  margin-top: 10px;
+}
+.c-result,
+.p-result {
+  font-size: 2rem;
+}
+.player-selected span,
+.computer-selected span {
+  font-size: 1.5rem;
+}
+.coin {
+  margin: 50px;
+  height: 250px;
+}
+.coin-img {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  background: url("fc.png");
+  background-size: contain;
+}
+
+.tossCoin {
+  animation: spin 1s 2 ease;
+}
+
+@keyframes spin {
+  0% {
+    background: url("fc.png");
+    background-size: contain;
+  }
+
+  25% {
+    background: url("bc.png");
+    background-size: contain;
+  }
+
+  50% {
+    background: url("fc.png");
+    background-size: contain;
+  }
+
+  75% {
+    background: url("bc.png");
+    background-size: contain;
+  }
+
+  100% {
+    background: url("fc.png");
+    background-size: contain;
+  }
+}

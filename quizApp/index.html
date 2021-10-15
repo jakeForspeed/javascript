@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="menu-bar">
+            <h1>Quizz App</h1>
+        </div>
+        <div class="quiz">
+            <h3 class="question"></h3>
+            <ul>
+                <li>
+                    <input type="radio" id="a" name="answer" class="answer"/>
+                    <label id="a_text" for="a"></label>
+                </li>
+                <li>
+                    <input type="radio" id="b" name="answer" class="answer"/>
+                    <label id="b_text" for="b"></label>
+                </li>
+                <li>
+                    <input type="radio" id="c" name="answer" class="answer"/>
+                    <label id="c_text" for="c"></label>
+                </li>
+                <li>
+                    <input type="radio" id="d" name="answer" class="answer"/>
+                    <label id="d_text" for="d"></label>
+                </li>
+            </ul>
+            <!-- <button class="introBtn">Start Quizz</button> -->
+        </div>
+        <button class="submitBtn">Submit</button>
+    </div>
+
+    <div class="result">
+
+        <div class="score">
+            <h2>You have finished quizz!</h2>
+            <p>you score is</p>
+            <p class="score-text">5 / 5</p>
+            <button onclick="location.reload()">Try Again</button>
+        </div>
+        
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

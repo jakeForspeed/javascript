@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <div class="mobile">
+
+            <div class="mobile-verification">
+                <h3>Mobile Veification</h3>
+
+                <p>Please enter your moblie number to verify your account</p>
+
+                <p>You will receive a 4 digit code to verify next</p>
+
+                <div class="mobile-number">
+                    <label for="contact">Enter your phone</label>
+                    <input type="text" id="number" maxlength="11">
+                </div>
+
+                <button class="sendBtn" id="sendOtpBtn">Send OTP</button>
+
+                <div class="keypad">
+                    <button class="btn m-btns" id="btn">1</button>
+                    <button class="btn m-btns" id="btn">2</button>
+                    <button class="btn m-btns" id="btn">3</button>
+                    <button class="btn m-btns" id="btn">4</button>
+                    <button class="btn m-btns" id="btn">5</button>
+                    <button class="btn m-btns" id="btn">6</button>
+                    <button class="btn m-btns" id="btn">7</button>
+                    <button class="btn m-btns" id="btn">8</button>
+                    <button class="btn m-btns" id="btn">9</button>
+                    <button class="btn m-btns" id="btn">0</button>
+                    <button class="btn m-btns" id="btn">0</button>
+                    <button class="btn" id="btn"><i class="fas fa-backspace"></i></button>
+                </div>
+            </div>
+
+            <div class="otp-verification">
+                <div>
+                    <button class="backBtn"><i class="fas fa-arrow-left"></i></button>
+                    <h3>verification code</h3>
+                </div>
+                <p>Please type the verification code send to <span class="text-number"></span> the OTP will expire in <span class="expire-text"></span></p>
+
+                <div class="code-input">
+                    <input maxlength="1" type="text" id="first">
+                    <input maxlength="1" type="text" id="second">
+                    <input maxlength="1" type="text" id="third">
+                    <input maxlength="1" type="text" id="fourth">
+                </div>
+
+               <p class="resend">Resend OTP</p>
+
+                <button class="sendBtn" id="verifyBtn">Verify now</button>
+
+                <!-- <div class="keypad">
+                    <button class="btn o-btns" id="btn">1</button>
+                    <button class="btn o-btns" id="btn">2</button>
+                    <button class="btn o-btns" id="btn">3</button>
+                    <button class="btn o-btns" id="btn">4</button>
+                    <button class="btn o-btns" id="btn">5</button>
+                    <button class="btn o-btns" id="btn">6</button>
+                    <button class="btn o-btns" id="btn">7</button>
+                    <button class="btn o-btns" id="btn">8</button>
+                    <button class="btn o-btns" id="btn">9</button>
+                    <button class="btn o-btns" id="btn">0</button>
+                    <button class="btn o-btns" id="btn">0</button>
+                    <button class="btn" id="btn"><i class="fas fa-backspace"></i></button>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d756e3;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  margin: 50px 0;
+}
+
+.todo form {
+  width: 400px;
+  display: flex;
+}
+form input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+form button {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.todo-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.todo-list li {
+  list-style: none;
+  padding: 10px;
+}
+
+.todo-list .title {
+  font-size: 1.5rem;
+  background: #f2e9f5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-list .title .list-count,
+.list-complete-count {
+  font-size: 1rem;
+  color: grey;
+}
+.todo-list .title,
+.todo-list .task-list,
+form {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.todo-list .task-list {
+  width: 300px;
+  background: #f2e9f5;
+  padding: 10px 20px;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+  /* overflow: hidden; */
+}
+.todo-list .task-list::before {
+  content: "";
+  width: 5px;
+  height: 10px;
+  background: #deb554;
+  position: absolute;
+  top: -10px;
+  left: 25%;
+}
+.todo-list .task-list::after {
+  content: "";
+  width: 5px;
+  height: 10px;
+  background: #deb554;
+  position: absolute;
+  top: -10px;
+  right: 25%;
+}
+
+.todo-list .task-list:last-child {
+  margin-bottom: 20px;
+}
+.action {
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  right: 0px;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+}
+.todo-list .task-list:hover > .action {
+  opacity: 1;
+}
+.check,
+.undo,
+.trash {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.check,
+.undo {
+  color: green;
+  margin: 0 10px;
+}
+.trash {
+  color: red;
+}
+.undo:hover,
+.check:hover,
+.trash:hover {
+  transform: scale(1.3);
+}
+
+.fall {
+  /* transform: translateY(10px) rotateZ(20deg); */
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .todo {
+    max-width: 90%;
+  }
+  form {
+    max-width: 100%;
+  }
+}

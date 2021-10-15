@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+
+
+    <div class="addModal">
+        <div class="menu">Add Data<span><i class="far fa-window-close"></i></span></div>
+        <div class="modal-body">
+            <form class="add-form">
+                <input id="add_firstName" type="text" placeholder="FirstName">
+                <input id="add_middleName" type="text" placeholder="MiddleName">
+                <input id="add_lastName" type="text" placeholder="LastName">
+                <input id="add_email" type="text" placeholder="Email">
+                <textarea id="add_address"></textarea>
+                <select id="add_role">
+                    <option value="admin">Admin</option>
+                    <option value="ceo">CEO</option>
+                    <option value="manager">Manager</option>
+                </select>
+                <button class="addBtnData" type="submit">Add Data</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="crud">
+
+        <div class="header">
+            <input type="text" id="key" placeholder="Search Name...">
+            <button class="showAddModal">Add Data</button>
+        </div>
+        
+
+        <div class="table-data">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Role</th>
+                        <th>FirstName</th>
+                        <th>MiddleName</th>
+                        <th>LastName</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Date Registered</th>
+                        <th>Time Registered</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    
+
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+
+
+    <div class="editModal">
+        <div class="menu">Edit Data<span><i class="far fa-window-close"></i></span></div>
+        <div class="modal-body">
+            <form class="edit-form">
+                
+            </form>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>

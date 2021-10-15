@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #bafc03;
+}
+
+.jokes {
+  width: 600px;
+  height: 300px;
+  max-height: 500px;
+  background: #032cfc;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff2f4;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.joke {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.joke > p {
+  font-size: 1.5rem;
+}
+h2 {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  word-wrap: normal;
+  transform: translateX(-50%);
+}
+button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #bafc03;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #032cfc;
+}
